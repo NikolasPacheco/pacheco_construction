@@ -1,127 +1,164 @@
-.title {
-    text-align: center;
-    color:#f4f4f4;
-    font-stretch: ultra-expanded;
-    font-size: 50px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+/* styles.css */
 
-}
-.under_title {
-    text-align: center;
-    color:#f4f4f4;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.nav {
-    background: #333; /* Background color */
-    text-align: center; /* Centers inline elements inside */
-    padding: 5px 0; /* Adds some padding */
-}
-
-/* Make the navigation links display inline */
-.nav ul {
-    list-style: none;  /* Removes bullet points */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Centers the items horizontally */
-}
-
-/* Style the navigation items */
-.nav ul li {
-    padding: 10px 20px;
-}
-
-/* Style the links */
-.nav ul li a {
-    text-decoration: none; /* Removes underline */
-    color: white; /* White text */
-    background: #333;
-    font-size: 18px;
-    padding: 10px 15px;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-/* Hover effect */
-.nav ul li a:hover {
-    background: #a81414;
-    border-radius: 5px;
-}
-.header {
-    background-image: url('Gemini_Generated_Image_cihldccihldccihl.jpg');
-    background-size: 100% auto; /* Ensures full width but keeps height dynamic */
-    background-position: center; /* Centers the image horizontally */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-color: #f4f4f4; /* Fallback background color */
-    margin: 0;
-    padding: 5px;
-}
-.about {
-    width: 100%;
-    clear: both;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+  
+  .header {
+    background-color: #1a1a1a; /* Black */
+    color: #ffffff;
+    padding: 40px 20px;
     text-align: center;
-    margin-top: 60px;
-    font-size: 15px;
-
-}
-
-.info {
-    color: #B22222;
-}
-
-
-.serv-list {
-    margin-left: 10px;
-    font-size: 20px;
-}
-hr {
-    border: none;
-    height: 2px;
-    background: #333; /* Dark line */
-    margin: 10px 0;
-    width: 100%;
-    clear: both;
-}
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff0000; /* Bold red for impact */
+  }
+  
+  .under_title {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #f0f0f0;
+  }
+  
+  .nav {
+    background-color: #ff0000; /* Red nav bar */
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #000000;
+  }
+  
+  .info-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .job-listing {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
   .offers {
     background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  }
- .offers :focus {
-    outline: none;
-  }
- .offers {
-    position: relative;
-    background-color: #B22222;
-    color: #fff;
-    margin: 28px;
-    border-radius: 999px;
-    line-height: 3em;
+    border-left: 6px solid #ff0000;
+    margin: 20px auto;
     padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: left;
+  }
+  
+  .offers:hover {
+    transform: scale(1.02);
+  }
+  
+  .offers h3 {
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #ff0000;
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+  
+  .offers p {
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  
+  footer.about {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  footer a.info {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  footer a.info:hover {
+    text-decoration: underline;
+  }
+  
+  address {
+    font-style: normal;
+    margin-top: 10px;
+  }
+  
+  hr {
+    margin: 40px 0 0 0;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-top: 1px solid #ccc;
   }
   
-  div.gallery {
-    margin-left: 50px;
-    margin-right: 20px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+    justify-items: center;
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
-    margin-left: 50px;
-    margin-right: 20px;
+  .gallery {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    max-width: 100%;
   }
   
-  div.gallery img {
+  .gallery img {
+    display: block;
     width: 100%;
     height: auto;
-    margin-left: 50px;
-    margin-right: 20px;
+    transition: transform 0.3s ease;
   }
   
+  .gallery:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
